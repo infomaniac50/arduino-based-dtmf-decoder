@@ -7,9 +7,9 @@ This started out as a project to build a tester to test DTMF pads on analog tele
 
 This is the first pass at a working decoder that will display any of the 16 valid characters on a DTMF pad.  
 
-Yes, the consumer pad usually only had 12 keys and early versions only had 10, the "* and #" hadn't been added yet.
+Yes, the consumer pad usually only had 12 keys and early versions only had 10.  The star and pound hadn't been added yet.
 
-It only takes four extra lines of code to check for the fourth row and this lets us check old military style "Autovon" phones which were one of the applications to use the 4th row.
+It only takes four extra lines of code to check for the fourth row and this lets us check old military style "Autovon" phones http://en.wikipedia.org/wiki/Autovon which were one of the applications to use the 4th row.
 
 = Details =
 
