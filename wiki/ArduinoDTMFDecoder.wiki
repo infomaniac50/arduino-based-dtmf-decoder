@@ -19,7 +19,7 @@ The project started with an inexpensive Arduino UNO board and a surplus 2 row by
 
 The hard part was building a circuit card for the DTMF decoder chip but thanks to http://www.expresspcb.com/ it's not a big deal as they supply free software to design and submit boards for manufacture.
 
-I downloaded the data sheet for the CM8870 and it is a really simple chip to use.  There are three resistors and two capacitors plus a standard 3.57 "color burst" crystal.  
+I downloaded the data sheet for the CM8870 http://www.datasheetdir.com/CM8870+Telephony and it is a really simple chip to use.  There are three resistors and two capacitors plus a standard 3.57 "color burst" crystal.  
 
 These crystals were called "color burst" because they were the time base in millions of analog NTSC standard television sets over the years.
 
