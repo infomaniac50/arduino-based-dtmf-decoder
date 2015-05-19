@@ -1,0 +1,9 @@
+# Introduction #
+
+These are things I would like to add to project to enhance functionality
+
+# Details #
+
+Detect and display rotary dial pulses
+
+Display more than 40 dialed characters

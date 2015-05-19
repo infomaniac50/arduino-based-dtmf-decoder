@@ -1,0 +1,35 @@
+#Arduino based DTMF decoder display
+
+# Introduction #
+
+This started out as a project to build a tester to test DTMF pads on analog telephones.  A friend and I collect old phones and often the pads need testing or repairing.
+
+This is the first pass at a working decoder that will display any of the 16 valid characters on a DTMF pad.
+
+Yes, the consumer pad usually only had 12 keys and early versions only had 10.  The star and pound hadn't been added yet.
+
+It only takes four extra lines of code to check for the fourth row and this lets us check old military style "Autovon" phones http://en.wikipedia.org/wiki/Autovon which were one of the applications to use the 4th row.
+
+# Details #
+
+Construction:
+
+The project started with an inexpensive Arduino UNO board and a surplus 2 row by 40 character LCD display.
+
+The hard part was building a circuit card for the DTMF decoder chip but thanks to http://www.expresspcb.com/ it's not a big deal as they supply free software to design and submit boards for manufacture.
+
+I downloaded the data sheet for the CM8870 http://www.datasheetdir.com/CM8870+Telephony and it is a really simple chip to use.  There are three resistors and two capacitors plus a standard 3.57 "color burst" crystal.
+
+These crystals were called "color burst" because they were the time base in millions of analog NTSC standard television sets over the years.
+
+By proper division of the frequency, you came up with the correct horizontal and vertical scan lines for NTSC television sets.  Therefore, many other devices made use of them because they were so inexpensive.
+
+The actual components for the DTMF decoder portion of the circuit came to under $5, not including shipping or the circuit board.  Here's one source: http://www.bgmicro.com
+
+# ToDo #
+
+I will be updating this with pictures of the circuit board, the completed device, and a video of it in action.
+
+One item on my todo list is to add some circuitry and code so that it will also display the digits dialed for rotary dial phones.  Rotary dial phones in the USA simply made and broke the connection the number of times indicated by each digit.
+
+IE: 5 = make and break 5 times, 0 = make and break 10 times.  The dials had a spring wound motor and mechanical governor so that they created 10 pulses per second if you dialed a 0 for example.  Should be fairly easy to create a loop that will time pulses on a pin and measure how many occurred in one second.  To be continued......
